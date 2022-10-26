@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76199F6F28F83FF50029AF94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76199F6E28F83FF50029AF94 /* AppDelegate.swift */; };
+		76199F7128F83FF50029AF94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76199F7028F83FF50029AF94 /* SceneDelegate.swift */; };
+		76199F7328F83FF50029AF94 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76199F7228F83FF50029AF94 /* MainViewController.swift */; };
+		76199F7628F83FF50029AF94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76199F7428F83FF50029AF94 /* Main.storyboard */; };
+		76199F7828F83FF60029AF94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76199F7728F83FF60029AF94 /* Assets.xcassets */; };
+		76199F7B28F83FF60029AF94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76199F7928F83FF60029AF94 /* LaunchScreen.storyboard */; };
+		76199FA728F93A850029AF94 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76199FA628F93A850029AF94 /* Util.swift */; };
+		76199FA928F944CB0029AF94 /* CreditScoreModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76199FA828F944CB0029AF94 /* CreditScoreModelProvider.swift */; };
+		76199FAC28F946D80029AF94 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76199FAB28F946D80029AF94 /* User.swift */; };
+		76199FB328F96D970029AF94 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76199FB228F96D970029AF94 /* NetworkClient.swift */; };
+		76199FB528FBD2BC0029AF94 /* CreditScoreModelProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76199FB428FBD2BC0029AF94 /* CreditScoreModelProviderTests.swift */; };
+		76199FB928FBD3210029AF94 /* valid.json in Resources */ = {isa = PBXBuildFile; fileRef = 76199FB828FBD3210029AF94 /* valid.json */; };
+		76199FBB28FBD7660029AF94 /* invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 76199FBA28FBD7660029AF94 /* invalid.json */; };
+		76199FBD28FBD8260029AF94 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 76199FBC28FBD8260029AF94 /* empty.json */; };
+		76199FBF28FBDE660029AF94 /* TestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76199FBE28FBDE660029AF94 /* TestBundle.swift */; };
+		76199FC128FBDF050029AF94 /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76199FC028FBDF050029AF94 /* NetworkClientTests.swift */; };
+		76199FC328FC060C0029AF94 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76199FC228FC060C0029AF94 /* MainViewControllerTests.swift */; };
+		762013E12907A7F800CA4D6D /* CreditScoreUIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762013E02907A7F800CA4D6D /* CreditScoreUIProvider.swift */; };
+		7667D7AE2909461E006D4F45 /* CreditScoreUICoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7667D7AD2909461E006D4F45 /* CreditScoreUICoordinatorTests.swift */; };
+		7667D7B0290946AB006D4F45 /* MockUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7667D7AF290946AB006D4F45 /* MockUser.swift */; };
+		76EC5DF529001D1C00C156BB /* valid.json in Resources */ = {isa = PBXBuildFile; fileRef = 76EC5DF429001D1C00C156BB /* valid.json */; };
+		D23EE8222CA7A1F65BCE1A3F /* Pods_Credit_ScoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD04DCD85B730A6FDE9D228 /* Pods_Credit_ScoreTests.framework */; };
+		F74E1F15B76E55F25558201E /* Pods_Credit_Score.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B144B4D570FCB4CD71EEF11 /* Pods_Credit_Score.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76199F8228F83FF70029AF94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76199F6328F83FF50029AF94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76199F6A28F83FF50029AF94;
+			remoteInfo = "Credit Score";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A9742DDC1DBE2EBCBC94E2B /* Pods-Credit ScoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit ScoreTests.debug.xcconfig"; path = "Target Support Files/Pods-Credit ScoreTests/Pods-Credit ScoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		19302E406550EF66BB623E44 /* Pods-Credit Score.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit Score.debug.xcconfig"; path = "Target Support Files/Pods-Credit Score/Pods-Credit Score.debug.xcconfig"; sourceTree = "<group>"; };
+		4B144B4D570FCB4CD71EEF11 /* Pods_Credit_Score.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credit_Score.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		603DAA0F216229BFD3F9AE54 /* Pods_Credit_Score_Credit_ScoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credit_Score_Credit_ScoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A18CB746CEE5CFE2B1F6DB /* Pods-Credit Score.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit Score.release.xcconfig"; path = "Target Support Files/Pods-Credit Score/Pods-Credit Score.release.xcconfig"; sourceTree = "<group>"; };
+		76199F6B28F83FF50029AF94 /* Credit Score.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Credit Score.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76199F6E28F83FF50029AF94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76199F7028F83FF50029AF94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		76199F7228F83FF50029AF94 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		76199F7528F83FF50029AF94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76199F7728F83FF60029AF94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76199F7A28F83FF60029AF94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76199F7C28F83FF60029AF94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76199F8128F83FF70029AF94 /* Credit ScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Credit ScoreTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76199FA628F93A850029AF94 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		76199FA828F944CB0029AF94 /* CreditScoreModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreModelProvider.swift; sourceTree = "<group>"; };
+		76199FAB28F946D80029AF94 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		76199FB228F96D970029AF94 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		76199FB428FBD2BC0029AF94 /* CreditScoreModelProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreModelProviderTests.swift; sourceTree = "<group>"; };
+		76199FB828FBD3210029AF94 /* valid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid.json; sourceTree = "<group>"; };
+		76199FBA28FBD7660029AF94 /* invalid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid.json; sourceTree = "<group>"; };
+		76199FBC28FBD8260029AF94 /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
+		76199FBE28FBDE660029AF94 /* TestBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBundle.swift; sourceTree = "<group>"; };
+		76199FC028FBDF050029AF94 /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		76199FC228FC060C0029AF94 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
+		762013E02907A7F800CA4D6D /* CreditScoreUIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreUIProvider.swift; sourceTree = "<group>"; };
+		7667D7AD2909461E006D4F45 /* CreditScoreUICoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreUICoordinatorTests.swift; sourceTree = "<group>"; };
+		7667D7AF290946AB006D4F45 /* MockUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUser.swift; sourceTree = "<group>"; };
+		76EC5DF429001D1C00C156BB /* valid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = valid.json; path = "Credit ScoreTests/Resources/valid.json"; sourceTree = SOURCE_ROOT; };
+		8DD04DCD85B730A6FDE9D228 /* Pods_Credit_ScoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credit_ScoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BC7B8E3D6EA6E415622FBC /* Pods-Credit Score-Credit ScoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit Score-Credit ScoreUITests.release.xcconfig"; path = "Target Support Files/Pods-Credit Score-Credit ScoreUITests/Pods-Credit Score-Credit ScoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AE6A4FF13BDD808291434B15 /* Pods-Credit ScoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit ScoreTests.release.xcconfig"; path = "Target Support Files/Pods-Credit ScoreTests/Pods-Credit ScoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		C20F5F907ACDB33E4DCC7E3A /* Pods-Credit Score-Credit ScoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit Score-Credit ScoreUITests.debug.xcconfig"; path = "Target Support Files/Pods-Credit Score-Credit ScoreUITests/Pods-Credit Score-Credit ScoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76199F6828F83FF50029AF94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74E1F15B76E55F25558201E /* Pods_Credit_Score.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76199F7E28F83FF70029AF94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23EE8222CA7A1F65BCE1A3F /* Pods_Credit_ScoreTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76199F6228F83FF50029AF94 = {
+			isa = PBXGroup;
+			children = (
+				76199F6D28F83FF50029AF94 /* Credit Score */,
+				76199F8428F83FF70029AF94 /* Credit ScoreTests */,
+				76199F6C28F83FF50029AF94 /* Products */,
+				D5544FF10586D34F4DC80B6A /* Pods */,
+				A5874E406D54845F5F139922 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		76199F6C28F83FF50029AF94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76199F6B28F83FF50029AF94 /* Credit Score.app */,
+				76199F8128F83FF70029AF94 /* Credit ScoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76199F6D28F83FF50029AF94 /* Credit Score */ = {
+			isa = PBXGroup;
+			children = (
+				76199FB128F96D610029AF94 /* Networking */,
+				76199FB028F947360029AF94 /* Utils */,
+				76199FAF28F947190029AF94 /* Coordinators */,
+				76199FAE28F9470F0029AF94 /* ViewControllers */,
+				76199FAD28F946F60029AF94 /* Resources */,
+				76199FAA28F946CA0029AF94 /* Models */,
+				76199F6E28F83FF50029AF94 /* AppDelegate.swift */,
+				76199F7028F83FF50029AF94 /* SceneDelegate.swift */,
+				76199F7C28F83FF60029AF94 /* Info.plist */,
+			);
+			path = "Credit Score";
+			sourceTree = "<group>";
+		};
+		76199F8428F83FF70029AF94 /* Credit ScoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				76199FC428FC06130029AF94 /* Resources */,
+				76199FB428FBD2BC0029AF94 /* CreditScoreModelProviderTests.swift */,
+				76199FC028FBDF050029AF94 /* NetworkClientTests.swift */,
+				76199FC228FC060C0029AF94 /* MainViewControllerTests.swift */,
+				7667D7AD2909461E006D4F45 /* CreditScoreUICoordinatorTests.swift */,
+			);
+			path = "Credit ScoreTests";
+			sourceTree = "<group>";
+		};
+		76199FAA28F946CA0029AF94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76199FAB28F946D80029AF94 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		76199FAD28F946F60029AF94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76EC5DF429001D1C00C156BB /* valid.json */,
+				76199F7428F83FF50029AF94 /* Main.storyboard */,
+				76199F7728F83FF60029AF94 /* Assets.xcassets */,
+				76199F7928F83FF60029AF94 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		76199FAE28F9470F0029AF94 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				76199F7228F83FF50029AF94 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		76199FAF28F947190029AF94 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				76199FA828F944CB0029AF94 /* CreditScoreModelProvider.swift */,
+				762013E02907A7F800CA4D6D /* CreditScoreUIProvider.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		76199FB028F947360029AF94 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				76199FA628F93A850029AF94 /* Util.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		76199FB128F96D610029AF94 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				76199FB228F96D970029AF94 /* NetworkClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		76199FC428FC06130029AF94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76199FBE28FBDE660029AF94 /* TestBundle.swift */,
+				76199FBA28FBD7660029AF94 /* invalid.json */,
+				76199FBC28FBD8260029AF94 /* empty.json */,
+				76199FB828FBD3210029AF94 /* valid.json */,
+				7667D7AF290946AB006D4F45 /* MockUser.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5874E406D54845F5F139922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B144B4D570FCB4CD71EEF11 /* Pods_Credit_Score.framework */,
+				603DAA0F216229BFD3F9AE54 /* Pods_Credit_Score_Credit_ScoreUITests.framework */,
+				8DD04DCD85B730A6FDE9D228 /* Pods_Credit_ScoreTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5544FF10586D34F4DC80B6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19302E406550EF66BB623E44 /* Pods-Credit Score.debug.xcconfig */,
+				68A18CB746CEE5CFE2B1F6DB /* Pods-Credit Score.release.xcconfig */,
+				C20F5F907ACDB33E4DCC7E3A /* Pods-Credit Score-Credit ScoreUITests.debug.xcconfig */,
+				97BC7B8E3D6EA6E415622FBC /* Pods-Credit Score-Credit ScoreUITests.release.xcconfig */,
+				0A9742DDC1DBE2EBCBC94E2B /* Pods-Credit ScoreTests.debug.xcconfig */,
+				AE6A4FF13BDD808291434B15 /* Pods-Credit ScoreTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76199F6A28F83FF50029AF94 /* Credit Score */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76199F9528F83FF70029AF94 /* Build configuration list for PBXNativeTarget "Credit Score" */;
+			buildPhases = (
+				84903C137BC44CE4667C33AD /* [CP] Check Pods Manifest.lock */,
+				76199F6728F83FF50029AF94 /* Sources */,
+				76199F6828F83FF50029AF94 /* Frameworks */,
+				76199F6928F83FF50029AF94 /* Resources */,
+				4699715B083AC33BEB3DF1C6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Credit Score";
+			productName = "Credit Score";
+			productReference = 76199F6B28F83FF50029AF94 /* Credit Score.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76199F8028F83FF70029AF94 /* Credit ScoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76199F9828F83FF70029AF94 /* Build configuration list for PBXNativeTarget "Credit ScoreTests" */;
+			buildPhases = (
+				59E8C7062FC2F1F41B8C6DE1 /* [CP] Check Pods Manifest.lock */,
+				76199F7D28F83FF70029AF94 /* Sources */,
+				76199F7E28F83FF70029AF94 /* Frameworks */,
+				76199F7F28F83FF70029AF94 /* Resources */,
+				DCAC49FDA9D6D7FD15A2C1BE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76199F8328F83FF70029AF94 /* PBXTargetDependency */,
+			);
+			name = "Credit ScoreTests";
+			productName = "Credit ScoreTests";
+			productReference = 76199F8128F83FF70029AF94 /* Credit ScoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76199F6328F83FF50029AF94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					76199F6A28F83FF50029AF94 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					76199F8028F83FF70029AF94 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 76199F6A28F83FF50029AF94;
+					};
+				};
+			};
+			buildConfigurationList = 76199F6628F83FF50029AF94 /* Build configuration list for PBXProject "Credit Score" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76199F6228F83FF50029AF94;
+			productRefGroup = 76199F6C28F83FF50029AF94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76199F6A28F83FF50029AF94 /* Credit Score */,
+				76199F8028F83FF70029AF94 /* Credit ScoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76199F6928F83FF50029AF94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76199F7B28F83FF60029AF94 /* LaunchScreen.storyboard in Resources */,
+				76199F7828F83FF60029AF94 /* Assets.xcassets in Resources */,
+				76EC5DF529001D1C00C156BB /* valid.json in Resources */,
+				76199F7628F83FF50029AF94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76199F7F28F83FF70029AF94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76199FB928FBD3210029AF94 /* valid.json in Resources */,
+				76199FBD28FBD8260029AF94 /* empty.json in Resources */,
+				76199FBB28FBD7660029AF94 /* invalid.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4699715B083AC33BEB3DF1C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Credit Score/Pods-Credit Score-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Credit Score/Pods-Credit Score-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Credit Score/Pods-Credit Score-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59E8C7062FC2F1F41B8C6DE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Credit ScoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84903C137BC44CE4667C33AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Credit Score-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCAC49FDA9D6D7FD15A2C1BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Credit ScoreTests/Pods-Credit ScoreTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Credit ScoreTests/Pods-Credit ScoreTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Credit ScoreTests/Pods-Credit ScoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76199F6728F83FF50029AF94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76199F7328F83FF50029AF94 /* MainViewController.swift in Sources */,
+				76199FA928F944CB0029AF94 /* CreditScoreModelProvider.swift in Sources */,
+				76199FAC28F946D80029AF94 /* User.swift in Sources */,
+				76199F6F28F83FF50029AF94 /* AppDelegate.swift in Sources */,
+				76199FB328F96D970029AF94 /* NetworkClient.swift in Sources */,
+				76199F7128F83FF50029AF94 /* SceneDelegate.swift in Sources */,
+				762013E12907A7F800CA4D6D /* CreditScoreUIProvider.swift in Sources */,
+				76199FA728F93A850029AF94 /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76199F7D28F83FF70029AF94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76199FB528FBD2BC0029AF94 /* CreditScoreModelProviderTests.swift in Sources */,
+				76199FBF28FBDE660029AF94 /* TestBundle.swift in Sources */,
+				76199FC128FBDF050029AF94 /* NetworkClientTests.swift in Sources */,
+				7667D7AE2909461E006D4F45 /* CreditScoreUICoordinatorTests.swift in Sources */,
+				7667D7B0290946AB006D4F45 /* MockUser.swift in Sources */,
+				76199FC328FC060C0029AF94 /* MainViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76199F8328F83FF70029AF94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76199F6A28F83FF50029AF94 /* Credit Score */;
+			targetProxy = 76199F8228F83FF70029AF94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76199F7428F83FF50029AF94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76199F7528F83FF50029AF94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76199F7928F83FF60029AF94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76199F7A28F83FF60029AF94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76199F9328F83FF70029AF94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76199F9428F83FF70029AF94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76199F9628F83FF70029AF94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19302E406550EF66BB623E44 /* Pods-Credit Score.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9S7Q96E3X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Credit Score/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bhaktha.Credit-Score";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76199F9728F83FF70029AF94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A18CB746CEE5CFE2B1F6DB /* Pods-Credit Score.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9S7Q96E3X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Credit Score/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bhaktha.Credit-Score";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76199F9928F83FF70029AF94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A9742DDC1DBE2EBCBC94E2B /* Pods-Credit ScoreTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9S7Q96E3X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bhaktha.Credit-ScoreTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Credit Score.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Credit Score";
+			};
+			name = Debug;
+		};
+		76199F9A28F83FF70029AF94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6A4FF13BDD808291434B15 /* Pods-Credit ScoreTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9S7Q96E3X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bhaktha.Credit-ScoreTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Credit Score.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Credit Score";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76199F6628F83FF50029AF94 /* Build configuration list for PBXProject "Credit Score" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76199F9328F83FF70029AF94 /* Debug */,
+				76199F9428F83FF70029AF94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76199F9528F83FF70029AF94 /* Build configuration list for PBXNativeTarget "Credit Score" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76199F9628F83FF70029AF94 /* Debug */,
+				76199F9728F83FF70029AF94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76199F9828F83FF70029AF94 /* Build configuration list for PBXNativeTarget "Credit ScoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76199F9928F83FF70029AF94 /* Debug */,
+				76199F9A28F83FF70029AF94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76199F6328F83FF50029AF94 /* Project object */;
+}

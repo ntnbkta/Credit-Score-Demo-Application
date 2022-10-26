@@ -1,0 +1,6 @@
+framework module CreditScoreUISDK {
+  umbrella header "CreditScoreUISDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

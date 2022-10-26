@@ -1,0 +1,35 @@
+PODS:
+  - CreditScoreUISDK (1.0.0)
+  - OHHTTPStubs (8.0.0):
+    - OHHTTPStubs/Default (= 8.0.0)
+  - OHHTTPStubs/Core (8.0.0)
+  - OHHTTPStubs/Default (8.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (8.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (8.0.0)
+  - OHHTTPStubs/Swift (8.0.0):
+    - OHHTTPStubs/Default
+
+DEPENDENCIES:
+  - CreditScoreUISDK
+  - OHHTTPStubs (= 8.0.0)
+  - OHHTTPStubs/Swift (= 8.0.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CreditScoreUISDK
+    - OHHTTPStubs
+
+SPEC CHECKSUMS:
+  CreditScoreUISDK: 4b9975bbbcb79ceb6328e0672b05fd7af8f00572
+  OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
+
+PODFILE CHECKSUM: 0eb4005eacdc5508711ff11b870828eda6273a61
+
+COCOAPODS: 1.11.3

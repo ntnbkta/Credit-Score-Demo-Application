@@ -1,0 +1,6 @@
+framework module Pods_Credit_Score {
+  umbrella header "Pods-Credit Score-umbrella.h"
+
+  export *
+  module * { export * }
+}

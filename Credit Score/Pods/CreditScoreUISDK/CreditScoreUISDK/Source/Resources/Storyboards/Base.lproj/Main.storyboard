@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mzr-cr-RrL">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Credit Score-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CreditScoreViewController" title="Credit Score" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="CreditScoreViewController" customModule="CreditScoreUISDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CbK-kw-tac" userLabel="Container StackView">
+                                <rect key="frame" x="16" y="91" width="358" height="662"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n17-4q-9bU" userLabel="Stack View 1">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="326"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yek-yU-vfi" customClass="CircularScoreView" customModule="CreditScoreUISDK" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="326"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6qv-jj-1wi" userLabel="Stack View 2">
+                                        <rect key="frame" x="0.0" y="336" width="358" height="326"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giT-X8-1Ev" customClass="WhereYouStandView" customModule="CreditScoreUISDK" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="326"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="n17-4q-9bU" firstAttribute="leading" secondItem="CbK-kw-tac" secondAttribute="leading" id="B3t-JH-37L"/>
+                                    <constraint firstAttribute="trailing" secondItem="6qv-jj-1wi" secondAttribute="trailing" id="NRo-y6-lah"/>
+                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="v5F-lb-c7m" userLabel="Buttons StackView">
+                                <rect key="frame" x="0.0" y="773" width="390" height="47"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4H-EA-wdw">
+                                        <rect key="frame" x="0.0" y="6.3333333333333712" width="187.66666666666666" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="View in AR"/>
+                                        <connections>
+                                            <segue destination="AVx-Sc-hgI" kind="show" identifier="ARViewController" id="fuO-w5-dKh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYT-EE-zk3">
+                                        <rect key="frame" x="202.66666666666663" y="0.0" width="187.33333333333337" height="47"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="See My Score Analysis"/>
+                                        <connections>
+                                            <action selector="seeMyScoreAnalysis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lqT-S5-eHO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CbK-kw-tac" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1P2-97-9MA"/>
+                            <constraint firstItem="CbK-kw-tac" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4GL-GD-Hrr"/>
+                            <constraint firstItem="CbK-kw-tac" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5An-kn-9AQ"/>
+                            <constraint firstItem="v5F-lb-c7m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5oO-hN-H9q"/>
+                            <constraint firstAttribute="trailing" secondItem="v5F-lb-c7m" secondAttribute="trailing" id="6lo-7e-PEu"/>
+                            <constraint firstItem="v5F-lb-c7m" firstAttribute="top" secondItem="CbK-kw-tac" secondAttribute="bottom" constant="20" id="Q5r-6p-qCw"/>
+                            <constraint firstItem="CbK-kw-tac" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TQk-RU-1ez"/>
+                            <constraint firstItem="v5F-lb-c7m" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="dsf-vX-jJK"/>
+                            <constraint firstItem="v5F-lb-c7m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kPP-de-ory"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Credit Score" id="LgC-hZ-mZe"/>
+                    <connections>
+                        <outlet property="circularView" destination="Yek-yU-vfi" id="UV9-9I-2hd"/>
+                        <outlet property="containerStackView" destination="CbK-kw-tac" id="a1n-ti-plP"/>
+                        <outlet property="whereYouStandView" destination="giT-X8-1Ev" id="blq-SI-JdA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370.76923076923077" y="5.6872037914691944"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="15l-jH-6rH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mzr-cr-RrL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cOd-kz-yyW">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SLd-S8-9Fu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVr-Fn-2AH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-558.46153846153845" y="5.6872037914691944"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HKa-bR-QfK">
+            <objects>
+                <viewController id="AVx-Sc-hgI" customClass="ARViewController" customModule="CreditScoreUISDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uDj-7O-0Xf">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BbX-Yg-byv">
+                                <rect key="frame" x="0.0" y="91" width="390" height="662"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OSc-fQ-hko"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BbX-Yg-byv" firstAttribute="top" secondItem="OSc-fQ-hko" secondAttribute="top" id="9Jc-SF-9Dz"/>
+                            <constraint firstItem="BbX-Yg-byv" firstAttribute="centerX" secondItem="uDj-7O-0Xf" secondAttribute="centerX" id="UIV-rG-Hl4"/>
+                            <constraint firstItem="BbX-Yg-byv" firstAttribute="leading" secondItem="OSc-fQ-hko" secondAttribute="leading" id="aYV-rU-Vbf"/>
+                            <constraint firstItem="BbX-Yg-byv" firstAttribute="centerY" secondItem="uDj-7O-0Xf" secondAttribute="centerY" id="mxu-JZ-vMe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="H2Y-z6-VfV"/>
+                    <connections>
+                        <outlet property="arScnView" destination="BbX-Yg-byv" id="77F-yp-pZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKp-PL-RK7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370.76923076923077" y="794.78672985781986"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
